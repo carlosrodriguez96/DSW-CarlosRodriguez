@@ -1,0 +1,53 @@
+body {
+    /* Location of the image */
+    background-image: url(../img/fondo_1.png);
+    
+    /* Image is centered vertically and horizontally at all times */
+    background-position: center center;
+    
+    /* Image doesn't repeat */
+    background-repeat: no-repeat;
+    
+    /* Makes the image fixed in the viewport so that it doesn't move when 
+       the content height is greater than the image height */
+    background-attachment: fixed;
+    
+    /* This is what makes the background image rescale based on its container's size */
+    background-size: cover;
+    
+    /* Pick a solid background color that will be displayed while the background image is loading */
+    /* background-color:#b3b3b3; */
+    
+    /* SHORTHAND CSS NOTATION
+     * background: url(background-photo.jpg) center center cover no-repeat fixed;
+     */
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     display: flex;
+     min-height: 100vh;
+     flex-direction: column;
+  }
+  .card{      
+      border-color:#005883;
+  }
+  main > .container {
+    padding: 100px 15px 0;
+  }
+  
+  .footer {
+    background-color: #005883;
+    
+  }
+  
+  .footer > .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #ffffff !important;
+  }
+  
+  code {
+    font-size: 80%;
+  }
+  .grey {
+    background-color: #b3b3b3 !important;
+  }
+ 
