@@ -74,6 +74,60 @@
     <!-- Begin page content -->
     <main role="main" class="flex-shrink-0">
         <div class="container">
+            <div class="row">
+	
+                <div  style="width:1100px;  height:600px;" class="col-xs-12 col-md-10 col-lg-10 card" >
+                
+            <div  id="cntfr" >
+        
+                
+                </div>
+            </div>
+                <div class="col-xs-12 col-md-2 col-lg-2 " ><button type="button" class="btn btn-info">Score <span class="badge" id="score">0</span></button> 
+                <br><hr>
+                <div id="con-result" style="display:none;" >
+                <center><h3>Resultados</h3></center>
+                <hr>
+                <button type="button" class="btn btn-info">Respuestas Correctas <span class="badge" id="res_correct">0</span></button> 
+                <br>
+                <hr>
+                <button type="button" class="btn btn-danger">Respuestas Incorrectas <span class="badge" id="res_incorrect">0</span></button>
+                <br>
+                <hr>
+                <button type="button" class="btn btn-info">Respuestas Contestadas <span class="badge" id="t_respuestas">0</span></button>
+                <br>
+                <hr>
+                    <button type="button" class="btn btn-info" onclick="location.reload(true);">Volver a jugar </button>
+                </div>
+                
+            </div>
+            </div>
+            <center><div class="modal " id="myModal" tabindex="-1">
+                <div class="modal-dialog modal-lg">              
+            
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title" id="pregunta"></h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>                
+              </div>
+              <div class="modal-body">
+                  <p class="alert alert-info" value="a" id="a" > </p>
+                  <p class="alert alert-info" value="b" id="b"></p>
+                  <p  class="alert alert-info" value="c"id="c" ></p>
+                  <div id="con_respuesta">
+                      
+                  </div>
+                  
+              </div>
+              <div class="modal-footer">
+                <div id="button"></div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
+      </center>
         </div>
     </main>
 
@@ -84,4 +138,5 @@
     </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <script src="js/funciones.js"></script>
 </html>
